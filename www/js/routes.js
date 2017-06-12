@@ -17,6 +17,12 @@ angular.module('starter')
 		controller: 'BibliotecaController'
 	})
 
+	.state('bibliotecaInformacao', {
+		url: '/bibliotecaInformacao',
+		templateUrl: 'templates/bibliotecaInformacao.html',
+		controller: 'BibliotecaInformacaoController'
+	})
+
 	.state('restauranteuniversitario', {
 		url: '/restauranteuniversitario',
 		templateUrl: 'templates/restauranteuniversitario.html',
