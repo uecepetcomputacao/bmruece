@@ -1,1 +1,12 @@
 /* Empty. Add your own CSS if you like */
+<<<<<<< HEAD
+=======
+.scroll {
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+>>>>>>> mapa
