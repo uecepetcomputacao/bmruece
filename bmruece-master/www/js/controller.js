@@ -4,7 +4,7 @@ angular.module('starter')
 	$scope.listaDeApps = [
 		{
 			rotas: "biblioteca",
-			nome: "Biblioteca",
+			nome: "Biblioteca", 
 			imagem: "img/icon_biblioteca.png",
 			descricao: "Saiba mais sobre a biblioteca da UECE"
 		},
@@ -34,13 +34,6 @@ angular.module('starter')
 
 angular.module('starter')
 .controller('BibliotecaInformacaoController', function($scope, $stateParams){
-
-	$scope.biblioteca = $stateParams.app;
-
-});
-
-angular.module('starter')
-.controller('BibliotecaContatoController', function($scope, $stateParams){
 
 	$scope.biblioteca = $stateParams.app;
 
