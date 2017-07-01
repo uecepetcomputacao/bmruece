@@ -35,10 +35,4 @@ angular.module('starter')
 		controller: 'MapasController'
 	})
 
-	.state('bibliotecaContato', {
-		url: '/bibliotecaContato',
-		templateUrl: 'templates/bibliotecaContato.html',
-		controller: 'BibliotecaContatoController'
-	})
-
 });
