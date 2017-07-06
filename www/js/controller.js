@@ -35,14 +35,51 @@ angular.module('starter')
 angular.module('starter')
 .controller('BibliotecaInformacaoController', function($scope, $stateParams){
 
-	$scope.biblioteca = $stateParams.app;
+	$scope.bibliotecaInfo = $stateParams.app;
 
 });
 
 angular.module('starter')
+.controller('BibliotecaResultadoPesquisaController', function($scope, $stateParams){
+
+	//$scope.bibliotecaResultado = $stateParams.app;
+	$scope.livrosResultado = [
+		{
+			titulo: "Sistema Operacionais Modernos",
+			autor: "Tanenbaum",
+			edicao: "4",
+			editora: "Moderna"
+		},
+
+		{
+			titulo: "Cálculo 2",
+			autor: "Ciclano",
+			edicao: "2",
+			editora: "Saraiva"
+		},
+
+		{
+			titulo: "Arquitetura de Computadores",
+			autor: "Beltrano",
+			edicao: "5",
+			editora: "FTD"
+		}
+	];
+
+});
+
+angular.module('starter')
+.controller('BibliotecaLivroSelecionadoController', function($scope, $stateParams){
+
+	$scope.bibliotecaLivro = $stateParams.app;
+
+});
+
+
+angular.module('starter') //controller criada pelo rafael. Acredito que esta controller não tenha utilidade. Aurelio
 .controller('BibliotecaHomeController', function($scope, $stateParams){
 
-	$scope.biblioteca = $stateParams.app;
+	$scope.bibliotecaHome = $stateParams.app;
 
 });
 
