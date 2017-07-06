@@ -3,6 +3,7 @@
 	<ion-content ng-controller="BibliotecaResultadoPesquisaController">
 
 		<div class="list">
+
 			<a class="item item-divider" ng-repeat="livro in livrosResultado" href="#/bibliotecaLivroSelecionado/{{livro}}">
 				<ion-item class="item item-divider">{{livro.titulo}}</ion-item>
 				<ion-item class="item item-icon-left">
@@ -25,7 +26,6 @@
 
 			</a>
 
-			
 		</div>
 		
 	</ion-content>
