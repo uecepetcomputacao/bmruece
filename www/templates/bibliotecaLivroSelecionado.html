@@ -1,9 +1,65 @@
 <ion-view>
 	<ion-nav-title>Características do livro</ion-nav-title>
 	
-	<ion-content ng-controller="BibliotecaLivroSelecionadoController">
+	<ion-content>
+		<ion-list>
+			<ion-item>
+				<h3>Título</h3>
+				{{bibliotecaLivro.titulo}}
+			</ion-item>
 
-		{{bibliotecaLivro.autorCompleto}}
+			<ion-item>
+				<h3>Subtítulo</h3>
+				{{bibliotecaLivro.subtitulo}}
+			</ion-item>
+
+			<ion-item>
+				<h3>Autores</h3>
+				{{bibliotecaLivro.autorCompleto}}
+			</ion-item>
+
+			<ion-item>
+				<h3>Edição</h3>
+				{{bibliotecaLivro.edicao}}
+			</ion-item>
+
+			<ion-item>
+				<h3>Editora</h3>
+				{{bibliotecaLivro.editora}}
+			</ion-item>
+
+			<ion-item>
+				<h3>Idioma</h3>
+				{{bibliotecaLivro.idioma}}
+			</ion-item>
+
+			<ion-item>
+				<h3>Ano de publicação</h3>
+				{{bibliotecaLivro.ano}}
+			</ion-item>
+
+			<ion-item>
+				<h3>Assunto</h3>
+				{{bibliotecaLivro.assunto}}
+			</ion-item>
+
+			<ion-item>
+				<h3>Origem</h3>
+				{{bibliotecaLivro.origem}}
+			</ion-item>
+
+			<ion-item>
+				<h3>Disponibilidade</h3>
+				{{bibliotecaLivro.disponibilidade}}
+			</ion-item>
+
+			<ion-item>
+				<h3>Quantidade</h3>
+				{{bibliotecaLivro.quantidade}}
+			</ion-item>
+
+		</ion-list>
+		
 		
 	</ion-content>
 

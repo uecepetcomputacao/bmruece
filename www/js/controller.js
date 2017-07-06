@@ -61,7 +61,9 @@ angular.module('starter')
 			idioma: "Inglês",
 			ano: "2016",
 			assunto: "Computação",
-			origem: "Internacional"
+			origem: "Internacional",
+			disponibilidade: "Disponível",
+			quantidade: "2"
 		},
 
 		{
@@ -74,7 +76,10 @@ angular.module('starter')
 			idioma: "Português",
 			ano: "2009",
 			assunto: "Ciencias Exatas-Matematica",
-			origem: "Nacional"
+			origem: "Nacional",
+			disponibilidade: "Não disponível",
+			quantidade: "1"
+
 		},
 
 		{
@@ -87,11 +92,13 @@ angular.module('starter')
 			idioma: "Português",
 			ano: "",
 			assunto: "Ciencias Exatas",
-			origem: "Nacional"
+			origem: "Nacional",
+			disponibilidade: "Disponível",
+			quantidade: "3"
 		},
 
 		{
-			titulo: "Organização e Projeto de Computadoresssssssssssss haha",
+			titulo: "Organização e Projeto de Computadores",
 			subtitulo: "A interface hardware/software",
 			autor: "Patterson e Hennessy",
 			autorCompleto: "David A. Patterson e John L. Hennessy",
@@ -100,7 +107,9 @@ angular.module('starter')
 			idioma: "Português",
 			ano: "2014",
 			assunto: "Computação",
-			origem: "Internacional"
+			origem: "Internacional",
+			disponibilidade: "Não disponível",
+			quantidade: "2"
 		}
 	];
 
