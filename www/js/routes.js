@@ -23,6 +23,18 @@ angular.module('starter')
 		controller: 'BibliotecaInformacaoController'
 	})
 
+	.state('bibliotecaResultadoPesquisa', {
+		url: '/bibliotecaResultadoPesquisa',
+		templateUrl: 'templates/bibliotecaResultadoPesquisa.html',
+		controller: 'BibliotecaResultadoPesquisaController'
+	})
+
+	.state('bibliotecaLivroSelecionado', {
+		url: '/bibliotecaLivroSelecionado',
+		templateUrl: 'templates/bibliotecaLivroSelecionado.html',
+		controller: 'BibliotecaLivroSelecionadoController'
+	})
+
 	.state('bibliotecaHome', { //rota criada pelo rafael. Acredito que esta rota não tenha utilidade. Aurelio
 		url: '/biblioteca',
 		templateUrl: 'templates/biblioteca.html',
