@@ -40,29 +40,67 @@ angular.module('starter')
 });
 
 angular.module('starter')
+.controller('BibliotecaContatoController', function($scope, $stateParams){
+
+	$scope.bibliotecaContato = $stateParams.app;
+
+});
+
+angular.module('starter')
 .controller('BibliotecaResultadoPesquisaController', function($scope, $stateParams){
 
 	//$scope.bibliotecaResultado = $stateParams.app;
 	$scope.livrosResultado = [
 		{
 			titulo: "Sistema Operacionais Modernos",
-			autor: "Tanenbaum",
+			subtitulo: "",
+			autor: "Tanenbaum e Bos",
+			autorCompleto: "Andrew S. Tanenbaum e Herbert Bos",
 			edicao: "4",
-			editora: "Moderna"
+			editora: "Pearson Education",
+			idioma: "Inglês",
+			ano: "2016",
+			assunto: "Computação",
+			origem: "Internacional"
 		},
 
 		{
-			titulo: "Cálculo 2",
-			autor: "Ciclano",
+			titulo: "Cálculo",
+			subtitulo: "",
+			autor: "Rogawski",
+			autorCompleto: "Jon Rogawski",
 			edicao: "2",
-			editora: "Saraiva"
+			editora: "Artmed",
+			idioma: "Português",
+			ano: "2009",
+			assunto: "Ciencias Exatas-Matematica",
+			origem: "Nacional"
 		},
 
 		{
-			titulo: "Arquitetura de Computadores",
-			autor: "Beltrano",
-			edicao: "5",
-			editora: "FTD"
+			titulo: "Iniciacao A Lógica Matemática",
+			subtitulo: "",
+			autor: "Alencar Filho",
+			autorCompleto: "Edgar de Alencar Filho",
+			edicao: "21",
+			editora: "Nobel",
+			idioma: "Português",
+			ano: "",
+			assunto: "Ciencias Exatas",
+			origem: "Nacional"
+		},
+
+		{
+			titulo: "Organização e Projeto de Computadoresssssssssssss haha",
+			subtitulo: "A interface hardware/software",
+			autor: "Patterson e Hennessy",
+			autorCompleto: "David A. Patterson e John L. Hennessy",
+			edicao: "4",
+			editora: "Elsevier",
+			idioma: "Português",
+			ano: "2014",
+			assunto: "Computação",
+			origem: "Internacional"
 		}
 	];
 
@@ -71,7 +109,7 @@ angular.module('starter')
 angular.module('starter')
 .controller('BibliotecaLivroSelecionadoController', function($scope, $stateParams){
 
-	$scope.bibliotecaLivro = $stateParams.app;
+	$scope.bibliotecaLivro = angular.fromJson($stateParams.livro);
 
 });
 
