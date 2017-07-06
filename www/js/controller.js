@@ -54,6 +54,13 @@ angular.module('starter')
 });
 
 angular.module('starter')
+.controller('MapasContatoController', function($scope, $stateParams){
+
+	$scope.mapasContato = $stateParams.app;
+
+});
+
+angular.module('starter')
 .controller('MapasController', function($scope, $stateParams){
 
 	$scope.mapas = $stateParams.app;
