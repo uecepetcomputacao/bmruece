@@ -4,7 +4,7 @@
 
 		<div class="list">
 
-			<a class="item item-divider" ng-repeat="livro in livrosResultado" href="#/bibliotecaLivroSelecionado/{{livro}}">
+			<a class="item item-divider" ng-repeat="livro in livrosResultado | filter:pesquisaLivro | orderBy:'titulo'" href="#/bibliotecaLivroSelecionado/{{livro}}">
 				<ion-item class="item item-divider">{{livro.titulo}}</ion-item>
 				<ion-item class="item item-icon-left">
 			    	<i class="icon ion-person"></i>

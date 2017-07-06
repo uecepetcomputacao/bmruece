@@ -37,7 +37,7 @@ angular.module('starter')
 	})
 
 	.state('bibliotecaLivroSelecionado', {
-		url: '/bibliotecaLivroSelecionado:livro',
+		url: '/bibliotecaLivroSelecionado/:livro',
 		templateUrl: 'templates/bibliotecaLivroSelecionado.html',
 		controller: 'BibliotecaLivroSelecionadoController'
 	})
