@@ -37,7 +37,7 @@ angular.module('starter')
 	})
 
 	.state('bibliotecaLivroSelecionado', {
-		url: '/bibliotecaLivroSelecionado:livro',
+		url: '/bibliotecaLivroSelecionado/:livro', // tu esqueceu de colocar o / entre Selecionado e :livro. Samuel
 		templateUrl: 'templates/bibliotecaLivroSelecionado.html',
 		controller: 'BibliotecaLivroSelecionadoController'
 	})
