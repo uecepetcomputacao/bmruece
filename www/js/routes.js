@@ -23,7 +23,7 @@ angular.module('starter')
 		controller: 'BibliotecaInformacaoController'
 	})
 
-	.state('bibliotecaHome', {
+	.state('bibliotecaHome', { //rota criada pelo rafael. Acredito que esta rota não tenha utilidade. Aurelio
 		url: '/biblioteca',
 		templateUrl: 'templates/biblioteca.html',
 		controller: 'BibliotecaHomeController'
@@ -40,5 +40,12 @@ angular.module('starter')
 		templateUrl: 'templates/mapas.html',
 		controller: 'MapasController'
 	})
+
+	.state('mapasContato', {
+		url: '/mapasContato',
+		templateUrl: 'templates/mapasContato.html',
+		controller: 'MapasContatoController'
+	})
+
 
 });
