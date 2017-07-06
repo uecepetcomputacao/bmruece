@@ -35,7 +35,4 @@ angular.module('starter')
 		controller: 'MapasController'
 	})
 
-
-
-
 });
