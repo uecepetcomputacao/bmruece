@@ -1,22 +1,25 @@
 <ion-view>
-	<ion-nav-title></ion-nav-title>
+	<ion-nav-title>Livros buscados</ion-nav-title>
 	<ion-content ng-controller="BibliotecaResultadoPesquisaController">
 
 		<div class="list">
-			<a class="item item-divider" href="#/bibliotecaLivroSelecionado" ng-repeat="livro in livrosResultado" >
-				{{livro.titulo}}
+			<a class="item item-divider" ng-repeat="livro in livrosResultado" href="#/bibliotecaLivroSelecionado/{{livro}}">
+				<ion-item class="item item-divider">{{livro.titulo}}</ion-item>
 				<ion-item class="item item-icon-left">
 			    	<i class="icon ion-person"></i>
+			    	<h3>Autor: </h3>
 			    	{{livro.autor}}
 				</ion-item>
 
 				<ion-item class="item item-icon-left">
 				    <i class="icon ion-ios-bookmarks"></i>
+				    <h3>Edição: </h3>
 				    {{livro.edicao}}
 				</ion-item>
 
 				<ion-item class="item item-icon-left">
 				    <i class="icon ion-ios-book"></i>
+				    <h3>Editora: </h3>
 				    {{livro.editora}}
 				</ion-item>
 
@@ -27,12 +30,6 @@
 		
 	</ion-content>
 
-	<ion-footer-bar class="bar-balanced">
-		<div class="button-bar ">
-			<a class="button button-clear icon ion-home" href="#/listagemApps"></a>
-			<a class="button button-clear icon ion-information" href="#/bibliotecaInformacao"></a>
-			<a class="button button-clear"></a>
-		</div>
-	</ion-footer-bar>
+	<biblioteca-footer-bar></biblioteca-footer-bar>
 	
 </ion-view>

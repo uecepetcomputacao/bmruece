@@ -23,6 +23,13 @@ angular.module('starter')
 		controller: 'BibliotecaInformacaoController'
 	})
 
+	.state('bibliotecaContato', {
+		url: '/bibliotecaContato',
+		templateUrl: 'templates/bibliotecaContato.html',
+		controller: 'BibliotecaContatoController'
+	})
+
+
 	.state('bibliotecaResultadoPesquisa', {
 		url: '/bibliotecaResultadoPesquisa',
 		templateUrl: 'templates/bibliotecaResultadoPesquisa.html',
@@ -30,7 +37,7 @@ angular.module('starter')
 	})
 
 	.state('bibliotecaLivroSelecionado', {
-		url: '/bibliotecaLivroSelecionado',
+		url: '/bibliotecaLivroSelecionado:livro',
 		templateUrl: 'templates/bibliotecaLivroSelecionado.html',
 		controller: 'BibliotecaLivroSelecionadoController'
 	})
