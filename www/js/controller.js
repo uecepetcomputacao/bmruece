@@ -107,3 +107,10 @@ angular.module('starter')
   });
 
 });
+
+angular.module('starter')
+.controller('MapasContatoController', function($scope, $stateParams){
+
+	$scope.mapasContato = $stateParams.app;
+
+});

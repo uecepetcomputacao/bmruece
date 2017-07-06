@@ -35,4 +35,10 @@ angular.module('starter')
 		controller: 'MapasController'
 	})
 
+	.state('mapasContato', {
+		url: '/mapasContato',
+		templateUrl: 'templates/mapasContato.html',
+		controller: 'MapasContatoController'
+	})
+
 });
